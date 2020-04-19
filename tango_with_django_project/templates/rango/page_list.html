@@ -1,0 +1,23 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+
+{% block title_block %}
+	{% if category %}
+		{{category.name}}
+	{% else %}
+		Category does not exist
+	{% endif %}
+{% endblock %}
+
+{% block body_block %}
+	{% if pages %}
+	<ul>
+		{% for page in pages %}
+		<li><a href="{% url 'rango:goto'}?page_id={{page.id}}">{{page.title}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<strong> no pages </strong>
+	{% endif %}
+{% endblock %}

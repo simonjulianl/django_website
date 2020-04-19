@@ -1,0 +1,31 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+
+{% block title_block %}
+	 bitch 
+{% endblock %}
+
+{% block body_block %}
+	<h4> Number of visits ( 1 day 1 visit max ) : {{visits}}</h4>
+	
+	<img src="{% static "image/rango.jpg" %}" alt="not found nigger" >
+	<h1> this is about </h1>
+	<p> Nigga nigga nigga ass nigga <br>
+	this tutorial has been put together by <b><i>{{name}}</i></b> </p>
+	<select>
+		<option> what the hell </option>
+		<option> what the hell too</option>
+	</select>
+	<img src="{{ MEDIA_URL }}cat.jpg">
+	<button class="btn btn-primary" onClick="alert('you clicked me mofo');">
+		Click me JS
+	</button>
+	<button class="btn btn-primary" id="about-btn">
+		Click Me - I'm JavaScript on Speed
+			<div id="msg"> Hello another JQuery Example </div>
+	 </button>
+	<p> This texet is for JQuery Example </p>
+	<p> This is another example </p>
+
+
+{% endblock %}
